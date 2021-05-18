@@ -32,7 +32,9 @@ STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 
 import dj_database_url
 db_from_env = dj_database_url.config()
-DATABASES['default'].update(db_from_env)
+
+
+
 
 
 
@@ -107,6 +109,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation

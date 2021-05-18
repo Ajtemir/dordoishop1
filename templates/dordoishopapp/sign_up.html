@@ -1,0 +1,18 @@
+{% extends 'base_signup.html' %}
+{% load bootstrap3 %}
+
+{% block title %}Войти{% endblock %}
+{% block heading %}Дордой - страница входа!{% endblock %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h3>Владелец</h3>
+    {% bootstrap_form user_form %}
+    <h3>Контейнер</h3>
+    {% bootstrap_form dordoishop_form %}
+    <button type="submit" class="btn btn-red pull-right">Зарегистрировать</button>
+</form>
+<a href="{% url 'dordoishopapp-sign-in' %}"></a>
+{% endblock %}
+

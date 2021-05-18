@@ -1,0 +1,1 @@
+web: gunicorn dordoi.wsgi —log-file -

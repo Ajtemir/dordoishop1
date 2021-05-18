@@ -1,0 +1,22 @@
+{% extends 'dordoishopapp/base.html' %}
+{% load bootstrap3 %}
+
+{% block page %}
+<div class="col-lg-offset-2 col-lg-8">
+    <div class="panel">
+        <div class="panel-heading bg-ruby">
+            <h4 class="panel-title text-center text-white">
+                Профиль
+            </h4>
+        </div>
+        <div class="panel-body">
+            <form enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                {% bootstrap_form user_form %}
+                {% bootstrap_form dordoishop_form %}
+                <button class="btn btn-red" type='submit'>Обновить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

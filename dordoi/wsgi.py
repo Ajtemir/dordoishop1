@@ -17,5 +17,5 @@ application = get_wsgi_application()
 
 # heoku
 
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
+from whitenoise import WhiteNoise
+application = WhiteNoise(application)

@@ -23,13 +23,12 @@ STATICFILE_DIR = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     STATICFILE_DIR,
     BASE_DIR / 'static' / 'css',
-    os.path.join(BASE_DIR, 'static')
 
 ]
 
 
 
-STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 
 import dj_database_url
 db_from_env = dj_database_url.config()

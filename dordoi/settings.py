@@ -23,6 +23,7 @@ STATICFILE_DIR = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     STATICFILE_DIR,
     BASE_DIR / 'static' / 'css',
+    os.path.join(BASE_DIR, 'static')
 
 ]
 

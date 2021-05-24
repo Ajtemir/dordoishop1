@@ -21,8 +21,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATICFILE_DIR = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
-    STATICFILE_DIR,
+    # STATICFILE_DIR,
     BASE_DIR / 'static' / 'css',
+    BASE_DIR / 'static',
 
 ]
 
